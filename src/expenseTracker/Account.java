@@ -16,8 +16,20 @@ public class Account {
 		this.setPassword(password);
 		this.setBalance(balance);
 		this.setPin(pin);
+		this.balance = balance;
 	}
 	
+	
+	
+	private List<ExpenseData> expenses = new ArrayList<>();
+	
+	public List<ExpenseData> getExpenses(){
+		return expenses;
+	}
+	
+	public void addExpenses(ExpenseData expense){
+		this.expenses.add(expense);
+	}
 
 	public String getAccountNumber() {
 		return accountNumber;

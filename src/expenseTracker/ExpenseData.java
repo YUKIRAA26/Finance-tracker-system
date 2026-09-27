@@ -1,5 +1,8 @@
 package expenseTracker;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ExpenseData {
 	private String description;
 	private double amount;
@@ -8,13 +11,15 @@ public class ExpenseData {
 	private String date;
 	
 	
-	public ExpenseData(String description, double amount, String category, String date, double balance) {
+	public ExpenseData(String description, double amount, String category, String date,double balance) {
 		this.setDescription(description);
 		this.setAmount(amount);
 		this.setCategory(category);
-		this.date = date;
+		this.setDate(date);
+		this.balance = balance;
 	}
 	
+
 
 	public String getDescription() {
 		return description;
@@ -38,5 +43,29 @@ public class ExpenseData {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+
+
+	public String getDate() {
+		return date;
+	}
+
+
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+
+
+	public double getBalance() {
+		return balance;
+	}
+
+
+
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 }
