@@ -47,7 +47,7 @@ public class AccountManager {
 			break;
 		}
 		
-		info.put(number, new Account(number, name , password,pin,0.0));
+		info.put(number, new Account(number, name , password,pin,0.0,0.0));
 		AccountData.saveAccount(info);
 		System.out.println("Succesfully Created Account! ");
 	}

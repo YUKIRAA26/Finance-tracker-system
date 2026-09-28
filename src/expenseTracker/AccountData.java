@@ -25,9 +25,10 @@ public class AccountData {
 				String password = parts[2];
 				String pin = parts[3];
 				double balance = Double.parseDouble(parts[4]);
+				double totalSpend = Double.parseDouble(parts[5].trim());
 				
 				Account account = new Account(
-						number,name,password,pin,balance);
+						number,name,password,pin,balance,totalSpend);
 				
 				AccountManager.infos().put(number, account);
 			}
@@ -46,7 +47,8 @@ public class AccountData {
 			
 			for(Account account: info.values()) {
 				writer.write(account.getAccountNumber() + "|" + account.getName() + "|"
-						+ account.getPassword() + "|" + account.getPin() + "|" + account.getBalance());
+						+ account.getPassword() + "|" + account.getPin() + "|" + account.getBalance() + "|" + 
+						account.getTotalSpend());
 				writer.newLine();
 			}
 			

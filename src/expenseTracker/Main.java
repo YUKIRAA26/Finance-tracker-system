@@ -37,7 +37,7 @@ public class Main {
 					case "3" -> ExpenseManager.addExpense(isLogged);
 					case "4" -> ExpenseManager.viewExpenseHistory(isLogged);
 					case "5" -> ExpenseManager.checkBalance(isLogged.getAccountNumber());
-					case "6" -> ExpenseManager.others();
+					case "6" -> ExpenseManager.others(isLogged);
 					}
 
 				}

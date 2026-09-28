@@ -9,17 +9,25 @@ public class Account {
 	private String password;
 	private String pin;
 	private double balance;
+	private double totalSpend;
 	
-	Account(String accountNumber,String name,String password,String pin, double balance){
+	Account(String accountNumber,String name,String password,String pin, double balance,double totalSpend){
 		this.setAccountNumber(accountNumber);
 		this.setName(name);
 		this.setPassword(password);
 		this.setBalance(balance);
 		this.setPin(pin);
-		this.balance = balance;
+		this.totalSpend = totalSpend;
 	}
 	
+	public void addTotalSpend(double totalSpend) {
+		this.totalSpend += totalSpend;
+	}
 	
+	public Double getTotalSpend() {
+		return totalSpend;
+	}
+
 	
 	private List<ExpenseData> expenses = new ArrayList<>();
 	

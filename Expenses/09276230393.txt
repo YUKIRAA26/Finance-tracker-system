@@ -1,3 +1,4 @@
-yummy|21.0|food|2026-09-27 22:26|279.0
-yukira jacob|35.0|transportation|2026-09-27 22:27|744.0
-dawd|200.0|clothes|2026-09-27 22:28|544.0
+buying things for my home|450.0|things|2026-09-28 19:45|50.0
+want to buy mochi|100.0|food|2026-09-28 21:25|950.0
+want to buy food|500.0|food|2026-09-28 21:27|450.0
+buying clothes|100.0|clothes|2026-09-28 21:29|350.0
